@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(224, 222, 219);
+        font-family: "Poppins", sans-serif;
+      }
+      .wrapper {
+        padding: 50px;
+      }
+      .card {
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card m-auto shadow">
+        <h5 class="card-header">Bài tập 1: Xuất 3 số theo thứ tự tăng dần</h5>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col">
+                <label for="number_1">Số thứ nhất</label>
+                <input
+                  placeholder="Nhập số thứ nhất"
+                  type="number"
+                  class="form-control"
+                  id="number_1"
+                />
+              </div>
+              <div class="col">
+                <label for="number_2">Số thứ hai</label>
+                <input
+                  placeholder="Nhập số thứ hai"
+                  type="number"
+                  class="form-control"
+                  id="number_2"
+                />
+              </div>
+              <div class="col">
+                <label for="number_3">Số thứ ba</label>
+                <input
+                  placeholder="Nhập số thứ ba"
+                  type="number"
+                  class="form-control"
+                  id="number_3"
+                />
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary mt-3" id="submit">
+              Sắp xếp
+            </button>
+          </form>
+        </div>
+        <div class="card-footer">
+          <h6 id="message"></h6>
+        </div>
+      </div>
+      <div class="mt-5">
+        <div class="card m-auto shadow">
+          <h5 class="card-header">Bài tập 2: Chương trình "Chào hỏi"</h5>
+          <div class="card-body d-flex">
+            <form class="mr-5">
+              <div class="row">
+                <div class="col-12">
+                  <select class="form-control w-100" id="choose">
+                    <option>Chọn thành viên</option>
+                    <option value="father">Bố</option>
+                    <option value="mother">Mẹ</option>
+                    <option value="brother">Anh trai</option>
+                    <option value="sister">Em gái</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="submit_2"
+                class="form-control"
+              >
+                Gửi lời chào
+              </button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <h6 id="message_2"></h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="card m-auto shadow">
+          <h5 class="card-header">Bài tập 3: Đếm số chẵn lẻ</h5>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <label for="number_1">Số thứ nhất</label>
+                  <input
+                    placeholder="Nhập số thứ nhất"
+                    type="text"
+                    class="form-control"
+                    id="number1"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="number_2">Số thứ hai</label>
+                  <input
+                    placeholder="Nhập số thứ hai"
+                    type="number"
+                    class="form-control"
+                    id="number2"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="number_3">Số thứ ba</label>
+                  <input
+                    placeholder="Nhập số thứ ba"
+                    type="number"
+                    class="form-control"
+                    id="number3"
+                    required
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary mt-3 px-4"
+                id="submit_3"
+              >
+                Đếm
+              </button>
+            </form>
+          </div>
+          <div class="card-footer">
+            <h6 id="message_3"></h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="card m-auto shadow">
+          <h5 class="card-header">Bài tập 4: Đoán hình tam giác</h5>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <label for="number_1">Độ dài cạnh 1</label>
+                  <input
+                    placeholder="Nhập độ dài cạnh 1"
+                    type="text"
+                    class="form-control"
+                    id="length1"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="number_2">Độ dài cạnh 2</label>
+                  <input
+                    placeholder="Nhập độ dài cạnh 2"
+                    type="number"
+                    class="form-control"
+                    id="length2"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="number_3">Độ dài cạnh 3</label>
+                  <input
+                    placeholder="Nhập độ dài cạnh 3"
+                    type="number"
+                    class="form-control"
+                    id="length3"
+                    required
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary mt-3 px-4"
+                id="submit_4"
+              >
+                Dự đoán
+              </button>
+            </form>
+          </div>
+          <div class="card-footer">
+            <h6 id="message_4"></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
